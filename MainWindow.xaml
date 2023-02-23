@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <RichTextBox Margin="524,31,33,34">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Canvas Margin="10,10,400,10" Background="#FFAA80D6">
+            <Label Content="Header" Canvas.Left="21" Canvas.Top="26"/>
+            <TextBox x:Name="txtSubjectLine" Canvas.Left="21" TextWrapping="Wrap" Text="TextBox" Canvas.Top="57" Width="349" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="Body" Canvas.Left="26" Canvas.Top="108"/>
+            <RichTextBox x:Name="rtbDisplay" Height="179" Canvas.Left="21" Canvas.Top="167" Width="349" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run x:Name="runDisplay" Text="RichTextBox"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <Button x:Name="btnDisplayInfo" Content="Display" Canvas.Left="78" Canvas.Top="370" HorizontalAlignment="Left" VerticalAlignment="Center" Width="188" Click="btnDisplayInfo_Click"/>
+        </Canvas>
 
     </Grid>
 </Window>
